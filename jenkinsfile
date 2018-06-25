@@ -1,7 +1,7 @@
 node ('windows') {
     timestamps{
         stage('Checkout') {
-            git credentialsId: '', url: 'https://github.com/ssouabni/simple-calculator.git'
+            git credentialsId: '', url: 'https://github.com/samisouabni/simple-calculator.git'
         }
 
         def sonarHome = tool name: 'SonarQubeScannerMS', type: 'hudson.plugins.sonar.MsBuildSQRunnerInstallation'
