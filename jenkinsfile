@@ -1,5 +1,5 @@
 node ('windows') {
-    timestamps{
+    //timestamps{
         stage('Checkout') {
             git credentialsId: '', url: 'https://github.com/samisouabni/simple-calculator.git'
         }
@@ -33,5 +33,5 @@ node ('windows') {
                 }
             }
         }
-    }
+    //}
 }
