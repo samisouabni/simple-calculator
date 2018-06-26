@@ -13,7 +13,7 @@ node ('windows') {
         stage('Build'){
             //def msbuildHome = tool name: 'default', type: 'hudson.plugins.msbuild.MsBuildInstallation'
             //echo "msbuildHome=${msbuildHome}"
-            bat "MSBuild.exe /t:Rebuild /p:Configuration=Release /p:Platform=x64"
+            bat "MSBuild.exe /t:Rebuild /p:Configuration=Release"
         }
 
         //stage('Sonar Finish'){
